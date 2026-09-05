@@ -86,34 +86,25 @@ write-ups too, because the explanation is usually the interesting part.
 | **[deep-learning-portfolio](https://github.com/Rahul10d7/deep-learning-portfolio)** | A written tour of my graduate deep learning work: architectures, results, and what broke along the way. |
 | **[Portfolio Website](https://github.com/Rahul10d7/Portfolio-Website)** | Personal site, hand-built in HTML, CSS and JavaScript. |
 
-### Machine learning for healthcare
+### Graduate coursework
 
-Open-ended research projects on intensive care data, with full code. No patient
-data is redistributed in any of these, per the PhysioNet data use agreement.
-
-| Project | What it is |
-| --- | --- |
-| **[icu-mortality-xai](https://github.com/Rahul10d7/icu-mortality-xai)** | 0.837 AUC predicting ICU mortality, then SHAP revealed the top feature leaked the outcome. The interpretability pass invalidated the model, and that finding mattered more than the score. |
-| **[sepsis-sql-analytics](https://github.com/Rahul10d7/sepsis-sql-analytics)** | Ten escalating BigQuery analyses tracing sepsis through the ICU, from cohort building to window functions and set operations. |
-| **[clinical-notes-nlp](https://github.com/Rahul10d7/clinical-notes-nlp)** | Named entity recognition over discharge summaries, comparing spaCy, scispaCy and medspaCy, then Word2Vec and ClinicalBERT embeddings. |
-| **[icu-risk-ml-dl](https://github.com/Rahul10d7/icu-risk-ml-dl)** | Three modelling lenses on the same cohort: gradient boosting at 0.846 AUC, PCA and k-means phenotyping, and a bidirectional LSTM that lost to the tree model. |
-| **[llm-clinical-prompting](https://github.com/Rahul10d7/llm-clinical-prompting)** | Zero-shot, few-shot, chain-of-thought and tree-of-thought prompting for diabetes screening. A TF-IDF baseline beat all of them. |
-| **[mimic-visual-explorer](https://github.com/Rahul10d7/mimic-visual-explorer)** | Six visual perspectives on ICU care, each chosen because the question demanded that specific chart type. |
-| **[icu-mortality-tutorial](https://github.com/Rahul10d7/icu-mortality-tutorial)** | A peer-reviewed teaching notebook with a synthetic demo mode, so it runs without credentialed access. |
-
-### Graduate deep learning
-
-These are graded assignments with course autograders, so the solution code stays
-private. The [portfolio](https://github.com/Rahul10d7/deep-learning-portfolio)
-covers each in detail, and I am glad to walk through any implementation.
+Source repositories are private, since they hold graded assignment solutions and,
+for the healthcare work, analyses of credentialed clinical data that cannot be
+redistributed. The [portfolio](https://github.com/Rahul10d7/deep-learning-portfolio)
+covers the deep learning projects in detail, and I am happy to walk through any of
+it directly.
 
 | Project | Highlight |
 | --- | --- |
 | Model compression and LoRA | 72 MB → 7.98 MB via 4-bit and custom 3-bit block quantization |
 | Autoregressive image generation | Patch autoencoder → binary spherical quantization → causal transformer, with arithmetic coding at 19.5x |
 | LLM reasoning | 54% → 83% on unit conversion through rejection fine-tuning |
+| Explainable AI for ICU mortality | 0.837 AUC, and a SHAP-driven leakage finding that invalidated the naive model |
 | Road segmentation | Dual-head U-Net, 0.794 mIoU with simultaneous depth regression |
 | Neural driving planners | MLP, Perceiver-style transformer and CNN waypoint planners compared head to head |
+| Clinical NLP | NER over discharge summaries with scispaCy, medspaCy and ClinicalBERT |
+| ICU risk modelling | Gradient boosting at 0.846 AUC, k-means phenotyping, and an LSTM that lost to the tree model |
+| Sepsis SQL analytics | Ten escalating BigQuery analyses tracing sepsis through the ICU |
 
 ---
 
